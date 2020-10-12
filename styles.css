@@ -1,0 +1,29 @@
+/* Main Elements */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* TEMPORARY */
+
+.slideshow-container {
+    width: 75%;
+    margin: auto;
+}
+
+.slide-component img {
+    width: 15.625rem;
+    height: 15.625rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+
+}
+
+.slide-component {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
