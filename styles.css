@@ -25,7 +25,7 @@ p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-h2 { 
+h2 {
     font-size: 3rem;
 }
 
@@ -237,7 +237,7 @@ h3 {
     font-size: 4.5rem;
 }
 
-.individual-container>p {
+.individual-container > p {
     font-size: 1.5rem;
     width: 10rem;
 }
@@ -248,14 +248,116 @@ h3 {
 .footer-container {
     background-color: #71c9ce;
     text-align: center;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 footer {
     font-size: 2rem;
 }
 
-footer>p, footer>i {
+footer > i,
+footer > p {
     display: inline-block;
     margin: 0 10px;
+    cursor: pointer;
+}
+
+/***ABOUT PAGE***
+****************/
+
+.about-container {
+    margin: 0 30px 30px;
+    padding: 0 50px 50px;
+    text-align: center;
+}
+
+.about-container > h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+/***CONTACT PAGE***
+******************/
+.form-container{
+    margin-bottom: 250px;
+}
+
+.form-style-4 {
+    width: 70%;
+    font-size: 30px;
+    background-color: #71c9ce;
+    padding: 30px 30px 15px;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+.form-style-4 input[type=button],
+.form-style-4 input[type=email],
+.form-style-4 input[type=submit],
+.form-style-4 input[type=text],
+.form-style-4 label,
+.form-style-4 textarea {
+    font-family: 'Knewave', cursive;
+    font-size: 30px;
+    color: #fff;
+
+}
+.form-style-4 label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.form-style-4 label > span {
+    display: inline-block;
+    float: left;
+    margin-right: 1rem;
+}
+.form-style-4 input[type=email],
+.form-style-4 input[type=text] {
+    background-color: #cbf1f52c;
+    border: none;
+    border-radius: 1rem;
+    border-bottom: 1px dashed #fff;
+    width: 400px;
+    outline: none;
+    padding: 0;
+    font-style: italic;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    height: 3rem;
+}
+.form-style-4 textarea {
+    background-color: #cbf1f52c;
+    border: none;
+    border-radius: 1rem;
+    border-bottom: 1px dashed #fff;
+    width: 400px;
+    outline: none;
+    padding: 1rem;
+    font-style: italic;
+    overflow: hidden;
+    resize: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    height: 100px;
+}
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=text]:focus,
+.form-style-4 textarea:focus {
+    border-bottom: 1px dashed #ffdd1b;
+}
+
+.form-style-4 input[type=button],
+.form-style-4 input[type=submit] {
+    background: #576E86;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.form-style-4 input[type=button]:hover,
+.form-style-4 input[type=submit]:hover {
+    background: #394D61;
+    cursor: pointer;
 }

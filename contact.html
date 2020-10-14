@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="icon" href="./assets/icons8-food-and-wine-100.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Knewave&family=Yanone+Kaffeesatz&display=swap"
             rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e48ca8a1f1.js" crossorigin="anonymous"></script>
         <title>Contact Us! | Get in touch</title>
     </head>
     <body>
+        <script type="text/javascript">
+            //auto expand textarea
+            function adjust_textarea(h) {
+                h.style.height = "20px";
+                h.style.height = (h.scrollHeight) + "px";
+            }
+        </script>
         <div class="header-container">
             <header class="main-header">
                 <div class="logo">
@@ -34,5 +43,38 @@
         <div class="main-title">
             <h1 class="title">Contact Us</h1>
         </div>
+
+        <div class="form-container">
+
+            <form class="form-style-4" action="" method="post">
+                <label for="field1">
+                    <span>Enter Your Name:</span><input type="text" name="field1" required="true" autofocus/>
+                </label>
+                <label for="field2">
+                    <span>Email Address:</span><input type="email" name="field2" required="true"/>
+                </label>
+                <label for="field3">
+                    <span>Short Subject:</span><input type="text" name="field3" required="true"/>
+                </label>
+                <label for="field4">
+                    <span>Message to Us:</span>
+                    <textarea name="field4" onkeyup="adjust_textarea(this)" required="true"></textarea>
+                </label>
+                <label style="text-align: center;">
+                    <span></span><input type="submit" value="Send Letter"/>
+                </label>
+            </form>
+
+        </div>
+
+        <div class="footer-container">
+            <footer>
+                <i class="fab fa-twitter-square fa-lg"></i>
+                <i class="fab fa-facebook-square fa-lg"></i>
+                <i class="fab fa-linkedin fa-lg"></i>
+                <p>&#169 Sam Reskala 2020</p>
+            </footer>
+        </div>
+
     </body>
 </html>
